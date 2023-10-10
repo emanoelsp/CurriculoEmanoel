@@ -30,7 +30,11 @@ div{
     height: 200px;
     background-color: aqua;
     margin-left: 10%;
+    background-size: 100%;
+    background-image: url('ft.png');
 }
+
+
 
 .informacoes .menu{
     margin-top: 20%;
@@ -81,5 +85,48 @@ div{
     background: black;
 }
 
+@media screen and (max-width: 800px){
+    geral{
+        width: 100%;
+    }
+
+    .informacoes{
+        width: 100%;
+        background-color: blue;
+        color: white;
+        position: -webkit-sticky; /* Necessário para funcionar no Safari */
+        position: sticky;
+        top: 0;
+    }
+
+    .informacoes .foto{
+        border-radius: 50%;
+        width: 90px;
+        height: 90px;
+        background-color: aqua;
+        margin-left: 2%;
+    }
+
+    .informacoes .menu{
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+
+    .informacoes .menu ol li{
+        list-style: none;
+        color: white;
+        font-family: arial;
+        font-size: 18px;
+        margin-left: 2%;
+        margin-top: 2%;
+        margin-bottom: 0%;
+    }
+
+    .conteudo{
+        margin-left: 0%;
+        width: 100%;
+    }
+
+}
 
 
